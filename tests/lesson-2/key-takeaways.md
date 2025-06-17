@@ -15,15 +15,16 @@
 3. Repository: các commit (phiên bản)
 ## Commandlines
 **git init <thư mục gốc>**: 
-- bắt đầu đẩy folder lên để git quản lý  
+- khai báo thư mục được Git quản lý  
 - chỉ git init 1 lần khi mới tạo folder, sau đó chỉ thêm, sửa xóa file
 
 **git add <tên file>** 
-- đẩy từng file từ working directory vào staging 
+- đưa các file vào vùng staging 
+- bản chất là > snapshot lại 1 bản ghi chứa thông tin của các file được add (bao gồm cả nội dung và trạng thái của các file tại thời điểm add), working dir vẫn giữ nguyên không thay đổi
 - git add . : đẩy tất cả file
 
 **git commit -m “feat: add test 1”**
-- đẩy file/phiên bản mới lên repo
+- đẩy snapshot từ staging lên repository
 - trong "" là message ghi chú tên commit
 
 **git status**: xem trạng thái các file
