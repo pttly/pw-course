@@ -32,3 +32,4 @@ for(let i = arr.length - 1; i >= 0; i--) {
 };
 
 //## [2.4]
+// lấy value index trước, lần lượt so sánh với value các index sau, nếu bằng thì end

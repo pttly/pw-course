@@ -4,25 +4,16 @@ const words = ["apple", "banana", "cherry", "date"];
 
 //## [1.1]
 let scoreResult = scores.every(score => score > 70);
-if (scoreResult = true) {
-    console.log("Tất cả giá trị trong scores > 70 : đúng");
-} else {
-    console.log("Tất cả giá trị trong scores > 70 : sai")
-};
+console.log(scoreResult);
 
 //## [1.2]
 let scoreAge = scores.every(score => score > 15);
-if (scoreAge = true) {
-    console.log("Tất cả giá trị trong ages > 15 : đúng");
-} else {
-    console.log("Tất cả giá trị trong ages > 15 : sai")
-};
+console.log(scoreAge);
 
 //## [1.3]
-let wordLength = words.map(word => word.length);
-let wordResult = wordLength.every(eachWordLength => eachWordLength > 3)
-if (wordResult = true) {
-    console.log("Độ dài tất cả từ trong words > 3 : đúng");
-} else {
-    console.log("Độ dài tất cả từ trong words > 3 : sai");
-}
+// let wordLength = words.map(word => word.length); //no need use map()
+// let wordResult = wordLength.every(eachWordLength => eachWordLength > 3)
+// console.log(wordResult);
+
+let wordResult1 = words.every(word => word.length > 3);
+console.log(wordResult1);
