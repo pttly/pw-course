@@ -21,7 +21,8 @@
 **git add <tên file>** 
 - đưa các file vào vùng staging 
 - bản chất là > snapshot lại 1 bản ghi chứa thông tin của các file được add (bao gồm cả nội dung và trạng thái của các file tại thời điểm add), working dir vẫn giữ nguyên không thay đổi
-- git add . : đẩy tất cả file
+- git add file1 file2 : snapshot nhiều file cùng lúc
+- git add . : snapshot tất cả file
 
 **git commit -m “feat: add test 1”**
 - đẩy snapshot từ staging lên repository
